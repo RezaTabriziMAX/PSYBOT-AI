@@ -1,0 +1,7 @@
+FROM postgres:16-alpine
+
+ENV POSTGRES_USER=nuttoo
+ENV POSTGRES_PASSWORD=nuttoo
+ENV POSTGRES_DB=nuttoo
+
+EXPOSE 5432
