@@ -1,0 +1,31 @@
+{
+  "name": "terminal-widget",
+  "version": "0.1.0",
+  "description": "Template for a terminal-style web widget (React) compatible with Nuttoo terminal UI aesthetic.",
+  "kind": "template",
+  "entryFile": "src/index.tsx",
+  "runtime": {
+    "kind": "node",
+    "version": ">=18"
+  },
+  "inputs": {},
+  "outputs": {},
+  "files": {
+    "include": [
+      "src/**",
+      "README.md",
+      "package.json",
+      "tsconfig.json",
+      "Cargo.toml",
+      "Anchor.toml",
+      "tests/**",
+      "test/**"
+    ],
+    "exclude": [
+      "node_modules/**",
+      "target/**",
+      "dist/**",
+      ".git/**"
+    ]
+  }
+}
