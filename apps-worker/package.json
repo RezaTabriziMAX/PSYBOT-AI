@@ -1,0 +1,30 @@
+{
+  "name": "@nuttoo/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p src/tsconfig.json",
+    "start": "node --enable-source-maps dist/main.js",
+    "dev": "node --enable-source-maps dist/main.js",
+    "test": "node --test dist-test/sandbox.spec.js",
+    "typecheck": "tsc -p src/tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.1",
+    "pino": "^9.6.0",
+    "ulid": "^2.3.0",
+    "@nuttoo/logger": "workspace:*",
+    "@nuttoo/config": "workspace:*",
+    "@nuttoo/errors": "workspace:*",
+    "@nuttoo/crypto": "workspace:*",
+    "@nuttoo/db": "workspace:*",
+    "@nuttoo/queue": "workspace:*",
+    "@nuttoo/module-kit": "workspace:*",
+    "@nuttoo/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}
