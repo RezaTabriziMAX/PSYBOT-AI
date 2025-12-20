@@ -1,0 +1,565 @@
+nuttoo/
+├─ README.md
+├─ LICENSE
+├─ SECURITY.md
+├─ CODE_OF_CONDUCT.md
+├─ CONTRIBUTING.md
+├─ CHANGELOG.md
+├─ .gitignore
+├─ .gitattributes
+├─ .editorconfig
+├─ .npmrc
+├─ package.json
+├─ pnpm-lock.yaml
+├─ pnpm-workspace.yaml
+├─ turbo.json
+├─ tsconfig.base.json
+├─ biome.json
+├─ .env.example
+├─ .env.test.example
+├─ .env.production.example
+├─ .dockerignore
+├─ docker-compose.yml
+├─ docker-compose.dev.yml
+├─ docker-compose.prod.yml
+├─ Makefile
+├─ scripts/
+│  ├─ bootstrap.sh
+│  ├─ doctor.sh
+│  ├─ env/
+│  │  ├─ gen-dev-env.ts
+│  │  ├─ gen-prod-env.ts
+│  │  └─ validate-env.ts
+│  ├─ solana/
+│  │  ├─ install-solana.sh
+│  │  ├─ init-localnet.sh
+│  │  ├─ airdrop.sh
+│  │  ├─ create-test-wallets.ts
+│  │  └─ export-idls.ts
+│  ├─ db/
+│  │  ├─ wait-for-postgres.sh
+│  │  ├─ seed.ts
+│  │  └─ reset.ts
+│  ├─ ci/
+│  │  ├─ version.ts
+│  │  └─ release-notes.ts
+│  └─ repo/
+│     ├─ tree.ts
+│     └─ lint-tree.ts
+├─ docs/
+│  ├─ overview.md
+│  ├─ architecture.md
+│  ├─ quickstart.md
+│  ├─ deployment.md
+│  ├─ troubleshooting.md
+│  ├─ security.md
+│  ├─ terminal-style-guide.md
+│  ├─ api/
+│  │  ├─ openapi.yml
+│  │  └─ postman_collection.json
+│  ├─ protocol/
+│  │  ├─ state-machine.md
+│  │  ├─ module-spec.md
+│  │  ├─ fork-model.md
+│  │  └─ token-mapping.md
+│  └─ runbooks/
+│     ├─ localnet.md
+│     ├─ devnet.md
+│     ├─ mainnet.md
+│     ├─ backups.md
+│     └─ incident-response.md
+├─ infra/
+│  ├─ docker/
+│  │  ├─ api.Dockerfile
+│  │  ├─ agent.Dockerfile
+│  │  ├─ indexer.Dockerfile
+│  │  ├─ web.Dockerfile
+│  │  ├─ worker.Dockerfile
+│  │  └─ postgres.Dockerfile
+│  ├─ nginx/
+│  │  ├─ nginx.conf
+│  │  └─ sites-enabled/
+│  │     ├─ nuttoo-web.conf
+│  │     └─ nuttoo-api.conf
+│  ├─ terraform/
+│  │  ├─ modules/
+│  │  │  ├─ vpc/
+│  │  │  │  ├─ main.tf
+│  │  │  │  ├─ outputs.tf
+│  │  │  │  └─ variables.tf
+│  │  │  ├─ ecs/
+│  │  │  │  ├─ main.tf
+│  │  │  │  ├─ outputs.tf
+│  │  │  │  └─ variables.tf
+│  │  │  ├─ rds/
+│  │  │  │  ├─ main.tf
+│  │  │  │  ├─ outputs.tf
+│  │  │  │  └─ variables.tf
+│  │  │  ├─ redis/
+│  │  │  │  ├─ main.tf
+│  │  │  │  ├─ outputs.tf
+│  │  │  │  └─ variables.tf
+│  │  │  └─ observability/
+│  │  │     ├─ main.tf
+│  │  │     ├─ outputs.tf
+│  │  │     └─ variables.tf
+│  │  ├─ envs/
+│  │  │  ├─ dev/
+│  │  │  │  ├─ main.tf
+│  │  │  │  ├─ variables.tf
+│  │  │  │  └─ terraform.tfvars.example
+│  │  │  └─ prod/
+│  │  │     ├─ main.tf
+│  │  │     ├─ variables.tf
+│  │  │     └─ terraform.tfvars.example
+│  │  └─ README.md
+│  ├─ kubernetes/
+│  │  ├─ base/
+│  │  │  ├─ namespace.yml
+│  │  │  ├─ configmap.yml
+│  │  │  ├─ secrets.example.yml
+│  │  │  ├─ deployment-api.yml
+│  │  │  ├─ deployment-indexer.yml
+│  │  │  ├─ deployment-agent.yml
+│  │  │  ├─ deployment-worker.yml
+│  │  │  ├─ deployment-web.yml
+│  │  │  ├─ service-api.yml
+│  │  │  ├─ service-web.yml
+│  │  │  ├─ ingress.yml
+│  │  │  └─ hpa.yml
+│  │  ├─ overlays/
+│  │  │  ├─ dev/
+│  │  │  │  ├─ kustomization.yml
+│  │  │  │  └─ patches.yml
+│  │  │  └─ prod/
+│  │  │     ├─ kustomization.yml
+│  │  │     └─ patches.yml
+│  │  └─ README.md
+│  └─ monitoring/
+│     ├─ prometheus.yml
+│     ├─ grafana/
+│     │  ├─ dashboards/
+│     │  │  ├─ system-overview.json
+│     │  │  ├─ api-latency.json
+│     │  │  ├─ indexer-health.json
+│     │  │  └─ agent-runtime.json
+│     │  └─ provisioning/
+│     │     ├─ datasources.yml
+│     │     └─ dashboards.yml
+│     └─ loki/
+│        └─ loki-config.yml
+├─ packages/
+│  ├─ config/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ env.ts
+│  │  │  ├─ paths.ts
+│  │  │  ├─ constants.ts
+│  │  │  └─ feature-flags.ts
+│  │  └─ tsconfig.json
+│  ├─ logger/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ index.ts
+│  │  │  ├─ formatters.ts
+│  │  │  ├─ redaction.ts
+│  │  │  └─ tracing.ts
+│  │  └─ tsconfig.json
+│  ├─ errors/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ index.ts
+│  │  │  ├─ codes.ts
+│  │  │  ├─ http.ts
+│  │  │  └─ validation.ts
+│  │  └─ tsconfig.json
+│  ├─ crypto/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ keypair.ts
+│  │  │  ├─ signing.ts
+│  │  │  ├─ hashing.ts
+│  │  │  └─ memo.ts
+│  │  └─ tsconfig.json
+│  ├─ db/
+│  │  ├─ package.json
+│  │  ├─ prisma/
+│  │  │  ├─ schema.prisma
+│  │  │  ├─ migrations/
+│  │  │  │  └─ (generated)
+│  │  │  └─ seed.ts
+│  │  ├─ src/
+│  │  │  ├─ client.ts
+│  │  │  ├─ repositories/
+│  │  │  │  ├─ module.repo.ts
+│  │  │  │  ├─ fork.repo.ts
+│  │  │  │  ├─ run.repo.ts
+│  │  │  │  └─ user.repo.ts
+│  │  │  └─ queries/
+│  │  │     ├─ module.sql.ts
+│  │  │     └─ analytics.sql.ts
+│  │  └─ tsconfig.json
+│  ├─ queue/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ index.ts
+│  │  │  ├─ bullmq.ts
+│  │  │  ├─ jobs.ts
+│  │  │  └─ workers.ts
+│  │  └─ tsconfig.json
+│  ├─ solana/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ connection.ts
+│  │  │  ├─ pdas.ts
+│  │  │  ├─ tx.ts
+│  │  │  ├─ compute.ts
+│  │  │  ├─ programs/
+│  │  │  │  ├─ nuttoo-registry.ts
+│  │  │  │  ├─ nuttoo-fork.ts
+│  │  │  │  └─ nuttoo-run.ts
+│  │  │  ├─ idl/
+│  │  │  │  └─ (exported IDLs)
+│  │  │  └─ types/
+│  │  │     └─ anchor.ts
+│  │  └─ tsconfig.json
+│  ├─ module-kit/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ index.ts
+│  │  │  ├─ spec/
+│  │  │  │  ├─ module.manifest.schema.json
+│  │  │  │  ├─ inputs.schema.json
+│  │  │  │  └─ outputs.schema.json
+│  │  │  ├─ pack/
+│  │  │  │  ├─ pack.ts
+│  │  │  │  ├─ unpack.ts
+│  │  │  │  └─ integrity.ts
+│  │  │  ├─ validate/
+│  │  │  │  ├─ validate-manifest.ts
+│  │  │  │  ├─ validate-signature.ts
+│  │  │  │  └─ validate-sandbox.ts
+│  │  │  └─ runtime/
+│  │  │     ├─ sandbox.ts
+│  │  │     ├─ limits.ts
+│  │  │     └─ runner.ts
+│  │  └─ tsconfig.json
+│  ├─ terminal-ui/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ theme.ts
+│  │  │  ├─ ascii.ts
+│  │  │  ├─ components/
+│  │  │  │  ├─ TerminalFrame.tsx
+│  │  │  │  ├─ PromptLine.tsx
+│  │  │  │  ├─ StatusBar.tsx
+│  │  │  │  ├─ LogStream.tsx
+│  │  │  │  └─ CommandPalette.tsx
+│  │  │  └─ commands/
+│  │  │     ├─ parse.ts
+│  │  │     ├─ registry.ts
+│  │  │     └─ builtin.ts
+│  │  └─ tsconfig.json
+│  └─ sdk/
+│     ├─ package.json
+│     ├─ src/
+│     │  ├─ index.ts
+│     │  ├─ client.ts
+│     │  ├─ auth.ts
+│     │  ├─ modules.ts
+│     │  ├─ forks.ts
+│     │  ├─ runs.ts
+│     │  └─ types.ts
+│     └─ tsconfig.json
+├─ apps/
+│  ├─ web/
+│  │  ├─ package.json
+│  │  ├─ next.config.js
+│  │  ├─ middleware.ts
+│  │  ├─ public/
+│  │  │  ├─ robots.txt
+│  │  │  ├─ favicon.ico
+│  │  │  └─ terminal-noise.png
+│  │  ├─ src/
+│  │  │  ├─ app/
+│  │  │  │  ├─ layout.tsx
+│  │  │  │  ├─ page.tsx
+│  │  │  │  ├─ docs/
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ registry/
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ forks/
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ runs/
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  └─ api-health/
+│  │  │  │     └─ page.tsx
+│  │  │  ├─ components/
+│  │  │  │  ├─ TerminalShell.tsx
+│  │  │  │  ├─ TerminalHero.tsx
+│  │  │  │  ├─ TerminalFooter.tsx
+│  │  │  │  ├─ WalletConnect.tsx
+│  │  │  │  └─ CopyButton.tsx
+│  │  │  ├─ lib/
+│  │  │  │  ├─ api.ts
+│  │  │  │  ├─ solana.ts
+│  │  │  │  └─ telemetry.ts
+│  │  │  ├─ styles/
+│  │  │  │  └─ globals.css
+│  │  │  └─ content/
+│  │  │     ├─ copy/
+│  │  │     │  ├─ hero.ts
+│  │  │     │  ├─ chapters.ts
+│  │  │     │  ├─ good-to-know.ts
+│  │  │     │  └─ contact.ts
+│  │  │     └─ docs/
+│  │  │        ├─ intro.mdx
+│  │  │        └─ module-spec.mdx
+│  │  └─ tsconfig.json
+│  ├─ api/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ main.ts
+│  │  │  ├─ server.ts
+│  │  │  ├─ routes/
+│  │  │  │  ├─ health.ts
+│  │  │  │  ├─ auth.ts
+│  │  │  │  ├─ modules.ts
+│  │  │  │  ├─ forks.ts
+│  │  │  │  ├─ runs.ts
+│  │  │  │  └─ webhooks.ts
+│  │  │  ├─ controllers/
+│  │  │  │  ├─ modules.controller.ts
+│  │  │  │  ├─ forks.controller.ts
+│  │  │  │  └─ runs.controller.ts
+│  │  │  ├─ services/
+│  │  │  │  ├─ module.service.ts
+│  │  │  │  ├─ fork.service.ts
+│  │  │  │  ├─ run.service.ts
+│  │  │  │  ├─ storage.service.ts
+│  │  │  │  └─ policy.service.ts
+│  │  │  ├─ middleware/
+│  │  │  │  ├─ error.ts
+│  │  │  │  ├─ rate-limit.ts
+│  │  │  │  ├─ auth.ts
+│  │  │  │  └─ request-id.ts
+│  │  │  ├─ openapi/
+│  │  │  │  └─ build-openapi.ts
+│  │  │  ├─ config/
+│  │  │  │  ├─ env.ts
+│  │  │  │  └─ cors.ts
+│  │  │  └─ types/
+│  │  │     └─ http.ts
+│  │  ├─ test/
+│  │  │  ├─ api.spec.ts
+│  │  │  └─ modules.spec.ts
+│  │  └─ tsconfig.json
+│  ├─ indexer/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ main.ts
+│  │  │  ├─ stream/
+│  │  │  │  ├─ geyser.ts
+│  │  │  │  ├─ websockets.ts
+│  │  │  │  └─ polling.ts
+│  │  │  ├─ parsers/
+│  │  │  │  ├─ registry.events.ts
+│  │  │  │  ├─ fork.events.ts
+│  │  │  │  └─ run.events.ts
+│  │  │  ├─ sync/
+│  │  │  │  ├─ backfill.ts
+│  │  │  │  └─ checkpoints.ts
+│  │  │  ├─ services/
+│  │  │  │  ├─ persist.ts
+│  │  │  │  └─ metrics.ts
+│  │  │  └─ tsconfig.json
+│  │  └─ test/
+│  │     └─ parsers.spec.ts
+│  ├─ agent/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ main.ts
+│  │  │  ├─ loop/
+│  │  │  │  ├─ scheduler.ts
+│  │  │  │  ├─ heartbeat.ts
+│  │  │  │  └─ state.ts
+│  │  │  ├─ cognition/
+│  │  │  │  ├─ observer.ts
+│  │  │  │  ├─ summarizer.ts
+│  │  │  │  ├─ moduleizer.ts
+│  │  │  │  └─ fork-suggester.ts
+│  │  │  ├─ sources/
+│  │  │  │  ├─ github.ts
+│  │  │  │  ├─ npm.ts
+│  │  │  │  └─ onchain.ts
+│  │  │  ├─ actions/
+│  │  │  │  ├─ publish-module.ts
+│  │  │  │  ├─ propose-fork.ts
+│  │  │  │  └─ run-module.ts
+│  │  │  ├─ storage/
+│  │  │  │  ├─ blob.ts
+│  │  │  │  └─ cache.ts
+│  │  │  ├─ policies/
+│  │  │  │  ├─ allowlist.ts
+│  │  │  │  ├─ limits.ts
+│  │  │  │  └─ safety.ts
+│  │  │  └─ prompts/
+│  │  │     ├─ moduleize.md
+│  │  │     ├─ summarize.md
+│  │  │     └─ fork.md
+│  │  └─ tsconfig.json
+│  ├─ worker/
+│  │  ├─ package.json
+│  │  ├─ src/
+│  │  │  ├─ main.ts
+│  │  │  ├─ processors/
+│  │  │  │  ├─ pack-module.processor.ts
+│  │  │  │  ├─ verify-module.processor.ts
+│  │  │  │  ├─ run-module.processor.ts
+│  │  │  │  └─ publish-module.processor.ts
+│  │  │  ├─ sandbox/
+│  │  │  │  ├─ container.ts
+│  │  │  │  ├─ firejail.ts
+│  │  │  │  └─ limits.ts
+│  │  │  ├─ services/
+│  │  │  │  ├─ artifacts.ts
+│  │  │  │  └─ attestation.ts
+│  │  │  └─ tsconfig.json
+│  │  └─ test/
+│  │     └─ sandbox.spec.ts
+│  └─ cli/
+│     ├─ package.json
+│     ├─ src/
+│     │  ├─ main.ts
+│     │  ├─ commands/
+│     │  │  ├─ doctor.ts
+│     │  │  ├─ init.ts
+│     │  │  ├─ login.ts
+│     │  │  ├─ module/
+│     │  │  │  ├─ create.ts
+│     │  │  │  ├─ pack.ts
+│     │  │  │  ├─ publish.ts
+│     │  │  │  ├─ search.ts
+│     │  │  │  └─ run.ts
+│     │  │  ├─ fork/
+│     │  │  │  ├─ create.ts
+│     │  │  │  ├─ list.ts
+│     │  │  │  └─ diff.ts
+│     │  │  └─ devnet/
+│     │  │     ├─ start.ts
+│     │  │     └─ reset.ts
+│     │  ├─ ui/
+│     │  │  ├─ terminal.ts
+│     │  │  └─ prompts.ts
+│     │  ├─ config/
+│     │  │  └─ paths.ts
+│     │  └─ tsconfig.json
+│     └─ test/
+│        └─ cli.spec.ts
+├─ programs/
+│  └─ nuttoo_registry/
+│     ├─ Anchor.toml
+│     ├─ Cargo.toml
+│     ├─ package.json
+│     ├─ migrations/
+│     │  └─ deploy.ts
+│     ├─ tests/
+│     │  ├─ nuttoo_registry.spec.ts
+│     │  └─ fixtures/
+│     │     ├─ module-manifest.json
+│     │     └─ sample-artifact.tgz
+│     ├─ idl/
+│     │  └─ nuttoo_registry.json
+│     ├─ src/
+│     │  ├─ lib.rs
+│     │  ├─ constants.rs
+│     │  ├─ errors.rs
+│     │  ├─ events.rs
+│     │  ├─ state/
+│     │  │  ├─ mod.rs
+│     │  │  ├─ registry.rs
+│     │  │  ├─ module.rs
+│     │  │  ├─ fork.rs
+│     │  │  └─ run.rs
+│     │  ├─ instructions/
+│     │  │  ├─ mod.rs
+│     │  │  ├─ init_registry.rs
+│     │  │  ├─ publish_module.rs
+│     │  │  ├─ update_module.rs
+│     │  │  ├─ create_fork.rs
+│     │  │  ├─ attest_artifact.rs
+│     │  │  ├─ record_run.rs
+│     │  │  └─ set_policy.rs
+│     │  └─ utils/
+│     │     ├─ mod.rs
+│     │     ├─ hash.rs
+│     │     ├─ validate.rs
+│     │     └─ pda.rs
+│     └─ target/
+│        └─ (generated)
+├─ modules/
+│  ├─ README.md
+│  ├─ templates/
+│  │  ├─ solana-anchor-program/
+│  │  │  ├─ module.json
+│  │  │  ├─ README.md
+│  │  │  ├─ src/
+│  │  │  │  └─ (template)
+│  │  │  └─ test/
+│  │  │     └─ (template)
+│  │  ├─ solana-ts-client/
+│  │  │  ├─ module.json
+│  │  │  ├─ README.md
+│  │  │  └─ src/
+│  │  │     └─ (template)
+│  │  ├─ indexer-parser/
+│  │  │  ├─ module.json
+│  │  │  ├─ README.md
+│  │  │  └─ src/
+│  │  │     └─ (template)
+│  │  └─ terminal-widget/
+│  │     ├─ module.json
+│  │     ├─ README.md
+│  │     └─ src/
+│  │        └─ (template)
+│  └─ registry/
+│     ├─ builtins/
+│     │  ├─ module.json
+│     │  ├─ README.md
+│     │  └─ dist/
+│     │     └─ (generated)
+│     └─ community/
+│        └─ .gitkeep
+├─ storage/
+│  ├─ local/
+│  │  ├─ artifacts/
+│  │  ├─ attestations/
+│  │  └─ cache/
+│  └─ README.md
+├─ .github/
+│  ├─ workflows/
+│  │  ├─ ci.yml
+│  │  ├─ security-scan.yml
+│  │  ├─ release.yml
+│  │  ├─ docker.yml
+│  │  └─ docs.yml
+│  ├─ ISSUE_TEMPLATE/
+│  │  ├─ bug_report.md
+│  │  ├─ feature_request.md
+│  │  └─ module_submission.md
+│  └─ PULL_REQUEST_TEMPLATE.md
+└─ tests/
+   ├─ e2e/
+   │  ├─ localnet.e2e.spec.ts
+   │  ├─ devnet.e2e.spec.ts
+   │  └─ fixtures/
+   │     ├─ sample-module/
+   │     └─ sample-fork/
+   ├─ load/
+   │  ├─ k6/
+   │  │  ├─ api-load.js
+   │  │  └─ indexer-load.js
+   │  └─ README.md
+   └─ security/
+      ├─ threat-model.md
+      └─ sandbox-escape.test.ts
