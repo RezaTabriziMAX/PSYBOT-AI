@@ -1,0 +1,16 @@
+{
+  "name": "demo-module",
+  "version": "0.1.0",
+  "description": "Fixture module manifest",
+  "entryFile": "index.mjs",
+  "runtime": {
+    "kind": "node",
+    "version": ">=18"
+  },
+  "inputs": {
+    "example": "string"
+  },
+  "outputs": {
+    "result": "string"
+  }
+}
