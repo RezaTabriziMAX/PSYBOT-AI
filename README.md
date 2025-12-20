@@ -1,3 +1,4 @@
+<img width="1500" height="500" alt="image" src="https://github.com/user-attachments/assets/8e6c8f1b-f05d-4fef-87cc-052de20a6308" />
 
 # Nuttoo (NUTTOO)
 
