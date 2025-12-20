@@ -1,0 +1,21 @@
+{
+  "name": "@nuttoo/crypto",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "tweetnacl": "^1.0.3",
+    "bs58": "^6.0.0",
+    "@solana/web3.js": "^1.95.4"
+  },
+  "peerDependencies": {}
+}
