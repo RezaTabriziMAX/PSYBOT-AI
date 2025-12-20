@@ -1,0 +1,18 @@
+{
+  "name": "@nuttoo/nuttoo-registry-program",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "ANCHOR_WALLET=${ANCHOR_WALLET:-$HOME/.config/solana/id.json} anchor test --skip-build",
+    "test:build": "anchor test",
+    "migrate:deploy": "ts-node migrations/deploy.ts"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.95.3",
+    "bn.js": "^5.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
