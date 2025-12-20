@@ -1,0 +1,8 @@
+{
+  "module": "sample-module",
+  "notes": "E2E fork fixture",
+  "policyOverrides": {
+    "timeoutMs": 60000,
+    "network": "none"
+  }
+}
