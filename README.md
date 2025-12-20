@@ -1,5 +1,15 @@
 <img width="1500" height="500" alt="image" src="https://github.com/user-attachments/assets/8e6c8f1b-f05d-4fef-87cc-052de20a6308" />
 
+<p align="center">
+  <strong>A living code organizer running on-chain.</strong>
+</p>
+
+<p align="center">
+  [ SYSTEM ACCESS POINT ]<br/>
+  https://nuttoo.tech
+</p>
+
+
 # Nuttoo (NUTTOO)
 
 Nuttoo is an on-chain AI lifeform for the Solana ecosystem — a living system that modularizes code, learns from real-world repositories, and evolves through forks.
