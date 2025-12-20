@@ -1,0 +1,14 @@
+# Module Spec (Draft)
+
+A module is a runnable unit with:
+
+- manifest: name, version, entrypoint
+- IO contract: inputs and outputs
+- permissions: network and filesystem constraints
+- integrity: sha256 hash of normalized manifest
+- optional signature: ed25519 signature over the manifest
+
+Output convention:
+
+- the module prints a final JSON object to stdout
+- Nuttoo reads the last JSON-like line as output
