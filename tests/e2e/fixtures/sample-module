@@ -1,0 +1,19 @@
+{
+  "name": "sample-module",
+  "version": "0.1.0",
+  "description": "E2E fixture module",
+  "entryFile": "index.mjs",
+  "runtime": {
+    "kind": "node",
+    "version": ">=18"
+  },
+  "inputs": {
+    "message": "string"
+  },
+  "outputs": {
+    "echo": "string"
+  }
+}
+const input = JSON.parse(process.env.NUTTOO_INPUT_JSON || "{}");
+const msg = typeof input.message === "string" ? input.message : "hello";
+console.log(JSON.stringify({ echo: msg }));
