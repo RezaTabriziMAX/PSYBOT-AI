@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nuttoo
+  labels:
+    app.kubernetes.io/name: nuttoo
+    app.kubernetes.io/part-of: nuttoo
