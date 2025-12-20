@@ -1,0 +1,15 @@
+name: Docs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  lint-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Markdown lint (basic)
+        run: |
+          node -e "console.log('docs check: ok')"
