@@ -1,0 +1,277 @@
+openapi: 3.0.3
+info:
+  title: Nuttoo API
+  description: >
+    Nuttoo API provides programmatic access to a living on-chain code organizer.
+    It exposes endpoints for health checks, module management, forking,
+    ingestion, and system introspection.
+  version: 0.1.0
+servers:
+  - url: https://api.nuttoo.example
+    description: Production
+  - url: http://localhost:8080
+    description: Local development
+
+tags:
+  - name: health
+    description: Service health and readiness
+  - name: modules
+    description: Module registry and metadata
+  - name: forks
+    description: Fork lineage and evolution
+  - name: ingest
+    description: Repository ingestion
+  - name: system
+    description: System status and diagnostics
+
+paths:
+  /healthz:
+    get:
+      tags: [health]
+      summary: Liveness probe
+      responses:
+        "200":
+          description: Service is alive
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+
+  /readyz:
+    get:
+      tags: [health]
+      summary: Readiness probe
+      responses:
+        "200":
+          description: Service is ready
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  database:
+                    type: string
+                    example: ok
+                  solanaRpc:
+                    type: string
+                    example: ok
+        "503":
+          description: Dependencies unavailable
+
+  /v1/modules:
+    get:
+      tags: [modules]
+      summary: List registered modules
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 20
+        - in: query
+          name: cursor
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Module list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Module"
+                  nextCursor:
+                    type: string
+                    nullable: true
+
+    post:
+      tags: [modules]
+      summary: Register a new module
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ModuleCreate"
+      responses:
+        "201":
+          description: Module created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Module"
+
+  /v1/modules/{moduleId}:
+    get:
+      tags: [modules]
+      summary: Get module details
+      parameters:
+        - in: path
+          name: moduleId
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Module details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Module"
+        "404":
+          description: Module not found
+
+  /v1/forks:
+    get:
+      tags: [forks]
+      summary: List forks
+      responses:
+        "200":
+          description: Fork list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Fork"
+
+    post:
+      tags: [forks]
+      summary: Create a fork
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ForkCreate"
+      responses:
+        "201":
+          description: Fork created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Fork"
+
+  /v1/ingest:
+    post:
+      tags: [ingest]
+      summary: Ingest a repository
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/IngestRequest"
+      responses:
+        "202":
+          description: Ingestion started
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/IngestResponse"
+
+  /v1/system/status:
+    get:
+      tags: [system]
+      summary: Get system status
+      responses:
+        "200":
+          description: System status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SystemStatus"
+
+components:
+  schemas:
+    Module:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        version:
+          type: string
+        owner:
+          type: string
+        parentId:
+          type: string
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+
+    ModuleCreate:
+      type: object
+      required: [name, version]
+      properties:
+        name:
+          type: string
+        version:
+          type: string
+        parentId:
+          type: string
+          nullable: true
+
+    Fork:
+      type: object
+      properties:
+        id:
+          type: string
+        sourceModuleId:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+
+    ForkCreate:
+      type: object
+      required: [sourceModuleId]
+      properties:
+        sourceModuleId:
+          type: string
+
+    IngestRequest:
+      type: object
+      required: [repository]
+      properties:
+        repository:
+          type: string
+          example: https://github.com/example/repo
+        branch:
+          type: string
+          example: main
+
+    IngestResponse:
+      type: object
+      properties:
+        jobId:
+          type: string
+        status:
+          type: string
+          example: queued
+
+    SystemStatus:
+      type: object
+      properties:
+        api:
+          type: string
+          example: ok
+        worker:
+          type: string
+          example: running
+        solanaRpc:
+          type: string
+          example: reachable
+        database:
+          type: string
+          example: ok
