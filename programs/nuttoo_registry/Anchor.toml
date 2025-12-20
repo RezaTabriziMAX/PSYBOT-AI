@@ -1,0 +1,22 @@
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+nuttoo_registry = "NuTtOoReg1stry111111111111111111111111111111"
+
+[programs.devnet]
+nuttoo_registry = "NuTtOoReg1stry111111111111111111111111111111"
+
+[programs.mainnet]
+nuttoo_registry = "NuTtOoReg1stry111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "pnpm -C programs/nuttoo_registry test"
