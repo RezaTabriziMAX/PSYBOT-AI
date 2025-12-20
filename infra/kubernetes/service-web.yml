@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nuttoo-web
+  namespace: nuttoo
+  labels:
+    app.kubernetes.io/name: nuttoo-web
+    app.kubernetes.io/part-of: nuttoo
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: nuttoo-web
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
