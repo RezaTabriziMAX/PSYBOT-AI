@@ -1,0 +1,28 @@
+export type ErrorCode =
+  | "E_BAD_REQUEST"
+  | "E_UNAUTHORIZED"
+  | "E_FORBIDDEN"
+  | "E_NOT_FOUND"
+  | "E_CONFLICT"
+  | "E_RATE_LIMITED"
+  | "E_INTERNAL"
+  | "E_DB"
+  | "E_RPC"
+  | "E_VALIDATION"
+  | "E_SANDBOX"
+  | "E_SIGNATURE";
+
+export const ERROR_HTTP_STATUS: Record<ErrorCode, number> = {
+  E_BAD_REQUEST: 400,
+  E_UNAUTHORIZED: 401,
+  E_FORBIDDEN: 403,
+  E_NOT_FOUND: 404,
+  E_CONFLICT: 409,
+  E_RATE_LIMITED: 429,
+  E_INTERNAL: 500,
+  E_DB: 500,
+  E_RPC: 502,
+  E_VALIDATION: 422,
+  E_SANDBOX: 400,
+  E_SIGNATURE: 400,
+};
