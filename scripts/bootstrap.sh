@@ -13,7 +13,7 @@
 # Optional env:
 #   SKIP_INSTALL=1   -> skip pnpm install
 #   SKIP_BUILD=1     -> skip pnpm build
-#   NO_ENV_WRITE=1   -> do not create .env if missing
+#   NO_ENV_WRITE=1   -> do not create .env if missing    
 #   USE_DOCKER=1     -> print docker compose instructions as default path
 
 set -euo pipefail
