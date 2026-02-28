@@ -10,3 +10,4 @@ Templates are intentionally opinionated:
 - Clear module.json manifests for packing/publishing
 
 Each template can be copied directly or generated through the Nuttoo CLI (recommended).
+    
