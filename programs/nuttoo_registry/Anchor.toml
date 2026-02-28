@@ -5,7 +5,7 @@ skip-lint = false
 [programs.localnet]
 nuttoo_registry = "NuTtOoReg1stry111111111111111111111111111111"
 
-[programs.devnet]
+[programs.devnet]    
 nuttoo_registry = "NuTtOoReg1stry111111111111111111111111111111"
 
 [programs.mainnet]
