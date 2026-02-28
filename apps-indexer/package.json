@@ -7,7 +7,7 @@
     "build": "tsc -p tsconfig.json",
     "start": "node --enable-source-maps dist/main.js",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run"
+    "test": "vitest run"    
   },
   "dependencies": {
     "@solana/web3.js": "^1.95.3",
