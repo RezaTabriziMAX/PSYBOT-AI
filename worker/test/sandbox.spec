@@ -13,7 +13,7 @@ test("readSandboxLimits validates numbers", () => {
   const limits = readSandboxLimits({
     SANDBOX_MEMORY_MB: "not-a-number",
     WORKER_JOB_TIMEOUT_MS: "-1",
-    SANDBOX_PIDS_MAX: "0",
+    SANDBOX_PIDS_MAX: "0",    
     SANDBOX_CPU_SECONDS: "10",
     SANDBOX_NET: "egress",
     SANDBOX_FS_READONLY: "false",
