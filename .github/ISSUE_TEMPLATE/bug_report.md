@@ -1,4 +1,4 @@
-[bug_report.md](https://github.com/user-attachments/files/24270369/bug_report.md)
+[bug_report.md](https://github.com/user-attachments/files/24270369/bug_report.md)  
 ---
 name: Bug report
 about: Report a bug in Nuttoo
