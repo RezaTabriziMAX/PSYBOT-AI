@@ -9,7 +9,7 @@
     "dev": "node --enable-source-maps dist/main.js",
     "test": "node --test dist-test/sandbox.spec.js",
     "typecheck": "tsc -p src/tsconfig.json --noEmit"
-  },
+  },   
   "dependencies": {
     "zod": "^3.24.1",
     "pino": "^9.6.0",
