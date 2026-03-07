@@ -1,6 +1,6 @@
 [Uploading PULL_REQUEST_TEMPLATE.md…]() 
 ## Summary
-Describe what this PR changes and why.
+Describe what this PR changes and why.   
 
 ## Checklist
 - [ ] Tests added/updated
