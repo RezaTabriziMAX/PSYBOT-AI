@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Nuttoo bootstrap script
+#GLOSTY
+ bootstrap script
 # Purpose: one-command local setup for the Nuttoo monorepo
 # - Validates required tools
 # - Ensures a local .env exists
@@ -92,8 +93,8 @@ if [[ ! -f "$ENV_FILE" ]]; then
       warn ".env.example not found. Creating a minimal .env"
       cat > "$ENV_FILE" <<'EOF'
 NODE_ENV=development
-NUTTOO_API_PORT=8787
-NUTTOO_WEB_PORT=5173
+GLOSTY_API_PORT=8787
+GLOSTY_WEB_PORT=5173
 DATABASE_URL=postgresql://nuttoo:nuttoo@localhost:5432/nuttoo
 REDIS_URL=redis://localhost:6379
 CORS_ORIGIN=http://localhost:5173
