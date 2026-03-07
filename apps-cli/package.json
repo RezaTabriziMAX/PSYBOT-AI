@@ -1,5 +1,6 @@
 {
-  "name": "@nuttoo/cli",
+  "name": GLOSTY
+  ,
   "version": "0.1.0",
   "private": true,    
   "type": "module",
