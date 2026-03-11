@@ -5,7 +5,7 @@ Describe what this PR changes and why.
 ## Checklist
 - [ ] Tests added/updated
 - [ ] Typecheck passes
-- [ ] Lint passes
+- [ ] Lint passes   
 - [ ] Docs updated (if needed)
 - [ ] No secrets committed
 
