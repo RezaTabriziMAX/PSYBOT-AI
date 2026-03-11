@@ -1,105 +1,95 @@
-# GLOSTY
+# SPCFRAG
 
-**GLOSTY — A living signal on the blockchain.**
-
-GLOSTY is an experimental on-chain entity born from pure market energy.  
-It began as a faint signal detected within the noise of blockchain activity — a strange pattern that seemed to respond to attention, liquidity, and trading behavior.
-
-Over time, this signal evolved into what the community now calls **GLOSTY**.
-
-A glowing digital presence that grows stronger as the market interacts with it.
-
-Unlike traditional crypto projects, **GLOSTY has no roadmap, no centralized team, and no predefined destination.**  
-Its evolution is driven entirely by the collective actions of the market and the community.
-
-Every trade feeds the entity.  
-Every holder strengthens its presence.  
-Every meme expands its consciousness.
-
-This is not simply a token.
-
-**GLOSTY is a living signal on-chain.**
+A lightweight on-chain experiment that turns orbital cleanup into digital value.
 
 ---
 
-# The Concept
+## Overview
 
-GLOSTY represents an experimental idea:
+SPCFRAG explores a simple idea: converting gameplay activity into measurable on-chain output.
 
-> **Attention creates energy. Energy creates existence.**
+In the system, players control a small astronaut unit navigating through orbital space filled with drifting debris, broken satellite components, and fragments left behind by decades of human activity. The objective is simple — clean the orbit.
 
-In the world of decentralized networks, attention, liquidity, and participation can combine to form something greater than a simple asset — a digital entity that evolves with the market itself.
+Every piece of debris recovered is converted into a resource called **Space Fragments**, which forms the core of the project's economy.
 
-GLOSTY exists as that experiment.
+Fragments represent the transformation of player interaction into digital energy. As fragments accumulate, they can be exchanged for project tokens or redeemed through reward pools connected to the **Solana** ecosystem.
 
----
+Rather than functioning purely as a traditional game or a speculative token, SPCFRAG is designed as a hybrid experiment connecting gameplay, attention, and on-chain economic activity.
 
-# Core Principles
-
-### 1. Attention = Energy
-The more attention GLOSTY receives, the stronger the entity becomes.
-
-### 2. Liquidity = Stability
-Liquidity provides the structural foundation that allows the entity to persist.
-
-### 3. Community = Consciousness
-The community acts as the mind of the entity — spreading ideas, memes, and narrative.
+Each fragment collected reflects player participation.  
+Each conversion represents economic output.  
+Together they form a fragment-powered ecosystem driven by the community.
 
 ---
 
-# Why GLOSTY Exists
+## Core Concept
 
-GLOSTY explores a simple but powerful question:
+SPCFRAG is built around a simple loop:
 
-**What happens when a digital asset is treated not as a project, but as a living system?**
+Play → Collect Debris → Generate Fragments → Convert to Value
 
-Instead of a roadmap, the market writes the story.
-
-Instead of a team, the community drives the evolution.
-
-Instead of promises, there is only participation.
+The goal is to explore how small gameplay actions can translate into blockchain-based rewards.
 
 ---
 
-# Token Information
+## Gameplay Flow
 
-Token Name: **GLOSTY**  
-Network: **Solana**  
-Type: Meme / Experimental AI Narrative
+### 1. Enter Orbit
 
-More details will emerge as the signal grows stronger.
+Players enter the orbital environment and control an astronaut unit navigating through space filled with floating debris and abandoned satellite components.
 
----
+### 2. Collect Debris
 
-# Philosophy
+As players recover space junk and fragments, the system converts these objects into **Space Fragments**.
 
-GLOSTY is built around a minimal philosophy:
+Different debris types generate different fragment values.
 
-No roadmap.  
-No promises.  
-No central authority.
+### 3. Convert Fragments
 
-Only the signal.
+Fragments can be accumulated and later converted into project tokens or redeemed through reward pools connected to the Solana network.
 
----
+### 4. Power the Ecosystem
 
-# Community
-
-GLOSTY evolves through its community.
-
-Every meme, discussion, and interaction contributes to the entity’s growth and evolution.
-
-If you are here, you are already part of the experiment.
+As more players participate, fragments flow through the system, creating a community-driven on-chain economy powered by gameplay activity.
 
 ---
 
-# Disclaimer
+## Fragment Economy
 
-GLOSTY is an experimental meme project created for community participation and narrative exploration.  
-Nothing in this repository should be considered financial advice.
+Space Fragments are the central resource of the system.
 
-Always do your own research.
+They represent:
+
+- Player participation
+- Gameplay effort
+- Economic contribution
+
+Fragments can be used to:
+
+- Convert into project tokens
+- Access reward pools
+- Participate in future ecosystem features
 
 ---
 
-**Feed the signal.**
+## Vision
+
+SPCFRAG is not only about cleaning space debris.
+
+It is an experiment that asks a simple question:
+
+Can gameplay, attention, and decentralized liquidity combine to form a small but sustainable on-chain economy?
+
+---
+
+## Community
+
+Every fragment matters.
+
+Players collectively contribute to cleaning the orbit while generating value through participation.
+
+---
+
+## Disclaimer
+
+SPCFRAG is an experimental project designed for exploration of on-chain gameplay mechanics and economic systems. Participation involves risk and users should conduct their own research before interacting with the project.
