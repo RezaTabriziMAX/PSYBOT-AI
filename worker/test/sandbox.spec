@@ -4,7 +4,7 @@ import { readSandboxLimits } from "../src/sandbox/limits.js";
 
 test("readSandboxLimits applies defaults", () => {
   const limits = readSandboxLimits({});
-  assert.equal(limits.net, "none");
+  assert.equal(limits.net, "none");       
   assert.ok(limits.memoryMb > 0);
   assert.ok(limits.timeoutMs > 0);
 });
