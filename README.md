@@ -1,129 +1,75 @@
 # ORBFRAG
 
-### Explore Orbit. Discover Fragments. Turn Debris into Value.
-
-ORBFRAG is a lightweight on-chain experimental project that transforms gameplay interaction into digital value through a fragment-based exploration system.
-
-In the ORBFRAG universe, orbital space is filled with drifting debris, broken satellites, and hidden fragments left behind by decades of human activity. These fragments are not just remnants — they are resources waiting to be discovered.
-
-Your mission is simple:
-
-Explore the orbit.  
-Collect fragments.  
-Convert them into value.
-
-Built on the speed and efficiency of the Solana ecosystem, ORBFRAG explores how attention, interaction, and community activity can form a lightweight on-chain economy.
+### Orbit is breaking. Fragments are forming. Explorers turn chaos into value.
 
 ---
 
-# Project Concept
+## Overview
 
-Orbit is not empty.
-
-Over time, space has become a field of debris — abandoned technology, lost modules, and fragmented structures floating endlessly.
-
-Within ORBFRAG, players act as explorers navigating this environment, searching for valuable fragments hidden within the debris field.
-
-These fragments represent digital resources that can be collected, accumulated, and later converted into rewards.
-
-The more fragments discovered, the more the ecosystem evolves.
-
-ORBFRAG turns exploration into a continuous on-chain activity loop driven by player participation.
+ORBFRAG is a narrative-driven GameFi experiment that transforms gameplay activity into fragment-based on-chain value. In a collapsing orbital environment filled with debris, abandoned satellites, and fragmented technology, players enter the system as explorers tasked with recovering scattered fragments and stabilizing the orbit. These fragments are not just collectibles — they are compressed units of energy generated from orbital activity, waiting to be extracted and converted into digital value. Built on the Solana ecosystem, ORBFRAG connects gameplay, attention, and decentralized liquidity into a single loop powered entirely by player participation.
 
 ---
 
-# Core Mechanism
+## Lore — The Orbit Problem
 
-At the core of ORBFRAG is a fragment-based economic system.
-
-Instead of traditional mining or staking, value is generated through exploration and collection.
-
-Players navigate orbital zones, discover fragments, and convert them into digital rewards.
-
-Each fragment represents:
-
-- Player participation  
-- Exploration activity  
-- Economic contribution  
-
-The system follows a simple but powerful loop:
-
-Explore → Discover → Collect → Convert
-
-This structure transforms gameplay into measurable on-chain output.
+Low Earth orbit is no longer stable. Decades of failed missions, broken satellites, and abandoned structures have formed a dense debris field surrounding Earth. Over time, the constant motion and collision of these objects created something new: Fragments. Fragments are condensed energy units formed from chaos, motion, and entropy within orbit. If left unchecked, the orbital system will collapse. To prevent this, a decentralized exploration protocol was deployed: ORBFRAG. A system where explorers recover fragments and convert them into usable on-chain energy.
 
 ---
 
-# Gameplay Flow
+## Core Concept
 
-### 1. Enter Orbit
-
-Players begin their journey by entering orbital space and controlling an explorer unit navigating through floating debris and fragmented structures.
+ORBFRAG is built on a simple but powerful idea: player activity becomes energy. Instead of mining or staking, value is generated through exploration. Players enter orbit, detect fragments, extract resources, and convert them into value. Every action within the system contributes to a fragment-based economy that directly links gameplay interaction with digital output.
 
 ---
 
-### 2. Discover Fragments
+## Core Loop
 
-Fragments are scattered across the orbit, hidden within debris fields. Players must explore and locate these valuable pieces.
-
----
-
-### 3. Collect Debris
-
-Players collect fragments while clearing space debris. Each collected object contributes to the fragment economy.
+Explore → Detect → Extract → Convert → Circulate
 
 ---
 
-### 4. Convert to Rewards
+## Gameplay Flow
 
-Collected fragments can be converted into project tokens or redeemed through reward mechanisms within the ecosystem.
-
----
-
-# Fragment Economy
-
-The ORBFRAG ecosystem revolves around **Fragments** as its core resource.
-
-Fragments represent:
-
-- Exploration effort  
-- Player activity  
-- Digital energy within the system  
-
-Fragments can be used to:
-
-- Convert into tokens  
-- Access reward pools  
-- Participate in future ecosystem features  
-
-Through this system, gameplay interaction is directly linked to value creation.
+Players begin by entering orbital space filled with debris fields, abandoned satellites, and unstable zones. Within this environment, fragments appear in high-activity areas, requiring exploration and detection. As players locate these fragments, they extract them while simultaneously clearing debris from orbit. Each fragment collected represents recovered energy from the system. Over time, fragments accumulate and can be converted into project tokens or distributed through reward mechanisms within the ecosystem, forming a continuous gameplay-to-value loop.
 
 ---
 
-# Vision
+## Fragment System
 
-ORBFRAG is more than a simple exploration concept.
-
-It is an experiment designed to test whether gameplay, attention, and decentralized liquidity can combine to form a sustainable on-chain ecosystem.
-
-By transforming exploration into fragments and fragments into rewards, ORBFRAG creates a dynamic system powered entirely by community participation.
-
-As more explorers enter orbit, the fragment economy grows stronger.
+Fragments are the core resource of ORBFRAG and exist in multiple tiers. Common Fragments are generated from basic debris, appearing frequently but holding lower value. Rare Fragments are discovered within satellite remains, offering higher value but appearing less often. Core Fragments exist in dense orbital zones and are extremely rare, representing the highest level of value within the system. These fragments collectively represent player activity, energy recovery, and economic contribution within the ecosystem.
 
 ---
 
-# Community
+## Fragment Economy
 
-The ORBFRAG community is composed of explorers navigating the orbit together.
-
-Every participant contributes to the system by discovering fragments and expanding the ecosystem.
-
-Every fragment matters.
+The ORBFRAG ecosystem revolves around a fragment-powered economy where fragments act as resource units, energy carriers, and value generators. Players use fragments to convert into tokens, access reward pools, and participate in future ecosystem mechanics. This structure ensures that gameplay activity is directly tied to value creation, forming a system where participation drives economic output.
 
 ---
 
-# Join the Mission
+## Token Logic
 
-Fragments are already drifting in orbit.
+The ORBFRAG token is powered by fragment conversion. Fragments are transformed into tokens through player activity, creating a direct relationship between gameplay and economic generation. Optional burn or consumption mechanics can be introduced to maintain balance within the system. This ensures that player interaction continuously fuels the ecosystem while maintaining long-term sustainability.
 
-All that's left is to explore.
+---
+
+## Collective Orbit Economy
+
+ORBFRAG is not an individual experience but a shared system where all players contribute to a collective orbital economy. As players explore and collect fragments, they contribute to cleaning orbit, generating resources, and expanding the reward pool. System-wide progression milestones can unlock new zones, rewards, or events, such as 10,000 fragments unlocking new areas, 50,000 fragments activating reward pools, and 100,000 fragments triggering large-scale distribution events. This creates a community-driven progression model.
+
+---
+
+## Vision
+
+ORBFRAG is an experiment in building a lightweight, self-sustaining GameFi ecosystem. It explores whether gameplay, attention, and decentralized liquidity can combine into a dynamic on-chain economy. By transforming exploration into fragments and fragments into value, the system creates a loop where player activity powers the entire ecosystem. Each fragment collected represents recovered energy, and each participant contributes to stabilizing the orbit.
+
+---
+
+## Community
+
+The ORBFRAG community is composed of explorers operating within orbit. Often referred to as Fragment Hunters or Orbital Extractors, community members participate in exploration, discovery, and ecosystem expansion. Every fragment collected contributes to the shared system, reinforcing the idea that every action matters within the network.
+
+---
+
+## Join the Mission
+
+Orbit is unstable. Fragments are forming. Explorers are needed. Enter orbit, recover fragments, and turn chaos into value.
