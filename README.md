@@ -1,43 +1,56 @@
-
-# SPCFRAG
+# ORBFRAG
 
 ### Explore Orbit. Discover Fragments. Turn Debris into Value.
 
-SPCFRAG is a lightweight on-chain experimental project that combines simple gameplay mechanics with digital asset discovery. In the SPCFRAG universe, players explore orbital space filled with floating debris, broken satellites, and hidden fragments scattered across the void.
+ORBFRAG is a lightweight on-chain experimental project that transforms gameplay interaction into digital value through a fragment-based exploration system.
 
-Your mission is simple: clean space, discover fragments, and turn exploration into value.
+In the ORBFRAG universe, orbital space is filled with drifting debris, broken satellites, and hidden fragments left behind by decades of human activity. These fragments are not just remnants — they are resources waiting to be discovered.
 
-Built around the speed and efficiency of the Solana ecosystem, SPCFRAG explores how attention, interaction, and community activity can generate a fragment-based digital economy.
+Your mission is simple:
+
+Explore the orbit.  
+Collect fragments.  
+Convert them into value.
+
+Built on the speed and efficiency of the Solana ecosystem, ORBFRAG explores how attention, interaction, and community activity can form a lightweight on-chain economy.
 
 ---
 
 # Project Concept
 
-Space is not empty.
+Orbit is not empty.
 
-Decades of space missions have left orbit filled with debris — abandoned satellites, broken modules, and unknown fragments drifting silently through space.
+Over time, space has become a field of debris — abandoned technology, lost modules, and fragmented structures floating endlessly.
 
-In the SPCFRAG universe, explorers navigate this orbital environment collecting valuable fragments hidden among the debris. These fragments represent digital resources that can be accumulated and later exchanged for tokenized rewards.
+Within ORBFRAG, players act as explorers navigating this environment, searching for valuable fragments hidden within the debris field.
+
+These fragments represent digital resources that can be collected, accumulated, and later converted into rewards.
 
 The more fragments discovered, the more the ecosystem evolves.
 
-SPCFRAG transforms exploration into an on-chain gameplay loop where activity directly contributes to the system.
+ORBFRAG turns exploration into a continuous on-chain activity loop driven by player participation.
 
 ---
 
 # Core Mechanism
 
-The core of SPCFRAG is a fragment discovery economy.
+At the core of ORBFRAG is a fragment-based economic system.
 
 Instead of traditional mining or staking, value is generated through exploration and collection.
 
-Players search orbital zones, collect floating fragments, and convert those fragments into digital rewards within the ecosystem.
+Players navigate orbital zones, discover fragments, and convert them into digital rewards.
 
-Each fragment represents participation within the system. The more fragments collected, the stronger the on-chain activity becomes.
+Each fragment represents:
 
-This structure creates a simple but powerful loop where gameplay interaction fuels the ecosystem itself.
+- Player participation  
+- Exploration activity  
+- Economic contribution  
 
-Exploration → Fragment Discovery → Collection → Reward Conversion
+The system follows a simple but powerful loop:
+
+Explore → Discover → Collect → Convert
+
+This structure transforms gameplay into measurable on-chain output.
 
 ---
 
@@ -45,54 +58,72 @@ Exploration → Fragment Discovery → Collection → Reward Conversion
 
 ### 1. Enter Orbit
 
-Players begin their journey as explorers navigating through orbital space filled with drifting debris and hidden fragments.
+Players begin their journey by entering orbital space and controlling an explorer unit navigating through floating debris and fragmented structures.
 
 ---
 
 ### 2. Discover Fragments
 
-While exploring the orbit, players encounter scattered fragments hidden among the debris. Each fragment represents a collectible resource within the SPCFRAG system.
+Fragments are scattered across the orbit, hidden within debris fields. Players must explore and locate these valuable pieces.
 
 ---
 
 ### 3. Collect Debris
 
-Players collect fragments while clearing orbital debris. This creates the core gameplay loop where exploration leads to discovery.
+Players collect fragments while clearing space debris. Each collected object contributes to the fragment economy.
 
 ---
 
 ### 4. Convert to Rewards
 
-Collected fragments can be exchanged within the ecosystem for token rewards or other on-chain incentives.
+Collected fragments can be converted into project tokens or redeemed through reward mechanisms within the ecosystem.
 
 ---
 
-# The SPCFRAG Vision
+# Fragment Economy
 
-SPCFRAG is designed as a simple experimental model exploring how gameplay interaction can generate digital economic activity.
+The ORBFRAG ecosystem revolves around **Fragments** as its core resource.
 
-Rather than focusing purely on speculation, SPCFRAG introduces a narrative where exploration, discovery, and community participation drive the ecosystem forward.
+Fragments represent:
 
-As more explorers enter orbit and collect fragments, the system grows stronger and more dynamic.
+- Exploration effort  
+- Player activity  
+- Digital energy within the system  
 
-The long-term goal is to transform a simple fragment-collection mechanic into a living on-chain environment powered by player activity.
+Fragments can be used to:
+
+- Convert into tokens  
+- Access reward pools  
+- Participate in future ecosystem features  
+
+Through this system, gameplay interaction is directly linked to value creation.
+
+---
+
+# Vision
+
+ORBFRAG is more than a simple exploration concept.
+
+It is an experiment designed to test whether gameplay, attention, and decentralized liquidity can combine to form a sustainable on-chain ecosystem.
+
+By transforming exploration into fragments and fragments into rewards, ORBFRAG creates a dynamic system powered entirely by community participation.
+
+As more explorers enter orbit, the fragment economy grows stronger.
 
 ---
 
 # Community
 
-The SPCFRAG community represents a group of explorers navigating orbital space together.
+The ORBFRAG community is composed of explorers navigating the orbit together.
 
-Community members participate in discovery, discussion, and expansion of the ecosystem.
+Every participant contributes to the system by discovering fragments and expanding the ecosystem.
 
-Every explorer contributes to the growing fragment economy.
-
-Welcome to the orbit.
+Every fragment matters.
 
 ---
 
 # Join the Mission
 
-The fragments are already out there.
+Fragments are already drifting in orbit.
 
 All that's left is to explore.
